@@ -1,0 +1,248 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <div
+    class="absolute top-0 left-0 bg-primary-950 z-50 w-full h-screen grid place-items-center loader-screen"
+  >
+    <div
+      class="menu-trigger relative z-10 overflow-hidden w-20 h-20 rounded-full"
+      data-component="menu-trigger"
+    >
+      <span
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white p-2 text-md"
+        ><span class="loader-number"></span>%</span
+      >
+      <svg
+        viewBox="0 0 80 80"
+        width="80"
+        height="80"
+        class="loader absolute top-0 left-0 fill-transparent stroke-white stroke-1"
+      >
+        <circle cx="40" cy="40" r="36"></circle>
+      </svg>
+    </div>
+  </div>
+  <header class="h-screen w-full bg-[#FC8C3E] overflow-hidden">
+    <div class="h-full flex row items-center">
+      <div class="w-[70%] py-10 h-full">
+        <svg
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute top-0 left-0 w-[200px] h-[200px]"
+        >
+          <g clip-path="url(#clip0_105_666)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M100 22C100 9.84974 90.1503 0 78 0H22C9.84974 0 0 9.84972 0 22V78.7194C0 90.8697 9.84974 100.719 22 100.719H78C90.1503 100.719 100 110.569 100 122.719V178C100 190.15 109.85 200 122 200H178C190.15 200 200 190.15 200 178V121.28C200 109.13 190.15 99.2805 178 99.2805H122C109.85 99.2805 100 89.4308 100 77.2805V22Z"
+              fill="url(#paint0_linear_105_666)"></path>
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_105_666"
+              x1="14"
+              y1="26"
+              x2="179"
+              y2="179.5"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#071023"></stop>
+              <stop offset="1" stop-color="#071023"></stop>
+            </linearGradient>
+            <clipPath id="clip0_105_666">
+              <rect width="200" height="200" fill="white"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+        <h1
+          class="text-7xl font-bold text-primary-950 uppercase text-center flex flex-col items-center justify-center h-full"
+        >
+          <span class="header-text relative">
+            Marcellus Creator of <svg
+              viewBox="0 0 200 200"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[100px] h-[100px] inline-block"
+            >
+              <g clip-path="url(#clip0_105_520)">
+                <path
+                  d="M200 99.5882C200 99.5882 155.228 150.176 100 150.176C44.7715 150.176 0 99.5882 0 99.5882C0 99.5882 44.7715 49 100 49C155.228 49 200 99.5882 200 99.5882Z"
+                  fill="url(#paint0_linear_105_520)"></path>
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_105_520"
+                  x1="177"
+                  y1="49"
+                  x2="124.191"
+                  y2="164.777"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#071023"></stop>
+                  <stop offset="1" stop-color="#071023"></stop>
+                </linearGradient>
+                <clipPath id="clip0_105_520">
+                  <rect width="200" height="200" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg><svg
+              viewBox="0 0 200 200"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[100px] h-[100px] inline-block"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M99.9994 153.877C141.147 153.877 176.851 127.54 194.627 111.673C201.789 105.28 201.789 94.597 194.627 88.204C176.851 72.3371 141.147 46 99.9994 46C58.8516 46 23.1479 72.3371 5.37163 88.2041C-1.79055 94.597 -1.79054 105.28 5.37164 111.673C23.1479 127.54 58.8516 153.877 99.9994 153.877ZM99.9994 137.57C120.783 137.57 137.631 120.722 137.631 99.9383C137.631 79.1551 120.783 62.3069 99.9994 62.3069C79.2161 62.3069 62.368 79.1551 62.368 99.9383C62.368 120.722 79.2161 137.57 99.9994 137.57Z"
+                fill="url(#paint0_linear_105_535)"></path>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_105_535"
+                  x1="157.499"
+                  y1="63.2603"
+                  x2="106.827"
+                  y2="158.86"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0.0509862" stop-color="#071023"></stop>
+                  <stop offset="1" stop-color="#071023"></stop>
+                </linearGradient>
+              </defs>
+            </svg></span
+          >
+          <span class="header-text"> chaotic mess to a</span>
+          <span class="header-text"> smooth user experience</span>
+          <span class="header-text"> my imaginated canvas</span>
+          <span class="header-text"> your digital experience!</span>
+        </h1>
+      </div>
+      <div class="w-[30%] relative">
+        <video
+          loop
+          autoplay
+          loop
+          muted
+          playsinline
+          class="inline-block w-[700px] h-full rounded-md"
+          ><source src="/header.mp4" />
+        </video>
+      </div>
+    </div>
+  </header>
+  <div class="svg-container">
+    <svg
+      class="background"
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M200 99.5882C200 99.5882 155.228 150.176 100 150.176C44.7715 150.176 0 99.5882 0 99.5882C0 99.5882 44.7715 49 100 49C155.228 49 200 99.5882 200 99.5882Z"
+        fill="url(#paint0_linear_105_520)"></path>
+    </svg>
+    <svg
+      class="foreground"
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M99.9994 153.877C141.147 153.877 176.851 127.54 194.627 111.673C201.789 105.28 201.789 94.597 194.627 88.204C176.851 72.3371 141.147 46 99.9994 46C58.8516 46 23.1479 72.3371 5.37163 88.2041C-1.79055 94.597 -1.79054 105.28 5.37164 111.673C23.1479 127.54 58.8516 153.877 99.9994 153.877ZM99.9994 137.57C120.783 137.57 137.631 120.722 137.631 99.9383C137.631 79.1551 120.783 62.3069 99.9994 62.3069C79.2161 62.3069 62.368 79.1551 62.368 99.9383C62.368 120.722 79.2161 137.57 99.9994 137.57Z"
+        fill="url(#paint0_linear_105_535)"></path>
+    </svg>
+  </div>
+</Layout>
+
+<script>
+  //gsap timeline
+  const min = 15;
+  const max = 40;
+  const randomLoadingValue = Math.floor(Math.random() * (max - min + 1)) + min;
+  const strokeDashArray = 260;
+
+  //gsap animation
+  gsap.to(".loader-number", {
+    text: randomLoadingValue,
+    ease: "power4.out",
+  });
+  gsap.to(".loader", {
+    duration: 0.6,
+    strokeDashoffset: (strokeDashArray / 100) * (100 - randomLoadingValue),
+    ease: "power4.out",
+    onComplete: function () {
+      gsap.to(".loader-number", {
+        duration: 0.6,
+        text: Math.floor(100),
+        ease: "power4.out",
+      });
+      gsap.to(".loader", {
+        duration: 0.6,
+        strokeDashoffset: 0,
+        ease: "power4.out",
+      });
+      gsap.to(".loader-screen", {
+        delay: 0.3,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power4.out",
+        onComplete: function () {
+          gsap.to(".loader-screen", { display: "none" });
+        },
+      });
+    },
+  });
+</script>
+
+<style>
+  .loader {
+    stroke-dasharray: 260px;
+    stroke-dashoffset: 260px;
+  }
+
+  .header-text {
+    -webkit-text-stroke: 2px #071023;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .svg-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .foreground:hover {
+    opacity: 1;
+  }
+
+  .foreground path {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    transition: stroke-dashoffset 1s ease-in-out;
+  }
+
+  .foreground:hover path {
+    stroke-dashoffset: 0;
+  }
+</style>
