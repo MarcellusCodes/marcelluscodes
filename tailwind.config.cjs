@@ -4,31 +4,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: "#eaf8ff",
-          100: "#daf1ff",
-          200: "#bce5ff",
-          300: "#93d1ff",
-          400: "#68b2ff",
-          500: "#4591ff",
-          600: "#256cff",
-          700: "#1a5ae8",
-          800: "#184dbb",
-          900: "#1d4692",
-          950: "#071023", //primary
-        },
+        primary: "#0e1418",
         secondary: {
-          50: "#fff6ed",
-          100: "#ffebd5",
-          200: "#fed4aa",
-          300: "#feb473",
-          400: "#fc8c3e", //primary
-          500: "#fa6a15",
-          600: "#eb4f0b",
-          700: "#c33a0b",
-          800: "#9b2f11",
-          900: "#7d2911",
-          950: "#431207",
+          primary: "#152b38",
+          secondary: "#5e2ffa",
+        },
+        tertiary: {
+          primary: "#081849",
+          secondary: "#39db90",
+        },
+        quaternary: {
+          primary: "#0d2c57",
+          secondary: "#72cdca",
+        },
+        quinary: {
+          primary: "#2e1865",
+          secondary: "#ec7c85",
         },
       },
     },
